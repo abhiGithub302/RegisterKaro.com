@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@layer components {
+  .service-card {
+    @apply flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm transition-all duration-300 hover:shadow-md;
+  }
+  
+  .service-icon {
+    @apply text-primary mb-4 flex items-center justify-center;
+  }
+  
+  .learn-more-btn {
+    @apply inline-flex items-center mt-4 text-primary font-medium hover:underline;
+  }
+}
