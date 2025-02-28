@@ -11,15 +11,18 @@ import TestimonialsSection from './components/TestimonialsSection';
 import FAQSection from './components/FAQSection';
 import MobileAppShowcase from './components/MobileAppShowcase';
 import Hero from './components/Hero';
+
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import Sponser from './components/Sponser';
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <SpeedInsights/> 
       <Navbar />
       
       {/* Hero Section */}
       <Hero/>
+      <Sponser/>
       <Services />
       <About/>
       <WhyChoose/>
